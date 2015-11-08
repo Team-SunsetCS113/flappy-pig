@@ -6,8 +6,10 @@ public class Score : MonoBehaviour {
 	static int score = 0;
 	static int highScore = 0;
 
-	static Score instance;
+    private int pointModifier = 0;
 
+	static Score instance;
+    
 	static public void AddPoint() {
 		if(instance.bird.dead)
 			return;
@@ -39,6 +41,14 @@ public class Score : MonoBehaviour {
 	}
 
 	void Update () {
+        //Only add point every 10th frame
+        if(pointModifier % 10 == 0)
+        {
+            AddPoint();
+        }
+
+        pointModifier++;
+
 		GetComponent<GUIText>().text = "Score: " + score + "\nHigh Score: " + highScore;
 	}
 }

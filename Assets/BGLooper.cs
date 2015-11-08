@@ -29,10 +29,30 @@ public class BGLooper : MonoBehaviour {
 
             pos.x += widthOfBGObject * numBGPanels;
 
+            //Randomly moves obstacles
             if (collider.tag == "Pipe")
             {
                 pos.y = Random.Range(pipeMin, pipeMax);
             }
+
+            //Randomly moves strong enemy
+            if(collider.tag == "StrongEnemy")
+            {
+                pos.y = Random.RandomRange(pipeMin, pipeMax);
+            }
+
+            //Randomly moves moderate enemy
+            if (collider.tag == "ModerateEnemy")
+            {
+                pos.y = Random.RandomRange(pipeMin, pipeMax);
+            }
+
+            //Randomly moves strong enemy
+            if (collider.tag == "WeakEnemy")
+            {
+                pos.y = Random.RandomRange(pipeMin, pipeMax);
+            }
+
 
             collider.transform.position = pos;
         }
