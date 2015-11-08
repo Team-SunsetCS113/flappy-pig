@@ -47,7 +47,8 @@ namespace Assets
 
         void OnCollisionEnter2D(Collision2D collision)
         {
-            return;
+            var healthBar = GameObject.Find("guiHealth");
+            healthBar.SendMessage("LostHealth", 10);
         }
     }
 }

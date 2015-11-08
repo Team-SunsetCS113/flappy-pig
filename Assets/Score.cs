@@ -21,7 +21,7 @@ public class Score : MonoBehaviour {
 		}
 	}
 
-	BirdMovement bird;
+	PigMovement bird;
 
 	void Start() {
 		instance = this;
@@ -30,7 +30,7 @@ public class Score : MonoBehaviour {
 			Debug.LogError("Could not find an object with tag 'Player'.");
 		}
 
-		bird = player_go.GetComponent<BirdMovement>();
+		bird = player_go.GetComponent<PigMovement>();
 		score = 0;
 		highScore = PlayerPrefs.GetInt("highScore", 0);
 	}

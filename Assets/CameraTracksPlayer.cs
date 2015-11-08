@@ -25,7 +25,7 @@ public class CameraTracksPlayer : MonoBehaviour {
 	void Update () {
 		if(player != null) {
 			Vector3 pos = transform.position;
-			pos.x = player.position.x + offsetX;
+			pos.x = player.position.x + offsetX ;
 			transform.position = pos;
 		}
 	}

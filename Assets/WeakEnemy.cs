@@ -11,7 +11,7 @@ namespace Assets
 
         Vector3 velocity = Vector3.zero;
         public float flapSpeed = 100f;
-        public float forwardSpeed = 0.001f;
+        public float forwardSpeed = 1f;
 
         private bool dead = false;
         
@@ -28,7 +28,7 @@ namespace Assets
         {
             if (health <= 0)
             {
-                //TODO: HIDE Asset
+                //TODO: HIDE Asset or start death animation
 
             }
             else
@@ -39,7 +39,8 @@ namespace Assets
 
         void OnCollisionEnter2D(Collision2D collision)
         {
-            return;
+            var healthBar = GameObject.Find("guiHealth");
+            healthBar.SendMessage("LostHealth", 5);
         }
     }
 }

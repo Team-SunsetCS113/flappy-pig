@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Assets
 {
+    /// <summary>
+    /// Engine for update and enemy generation
+    /// </summary>
     public class EnemyEngine
     {
     }
