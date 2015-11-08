@@ -5,7 +5,7 @@ public class BirdMovement : MonoBehaviour {
 
 	Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 100f;
-	public float forwardSpeed = 1f;
+	public float forwardSpeed = 0.11f;
 
 	bool didFlap = false;
 

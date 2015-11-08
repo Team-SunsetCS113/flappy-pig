@@ -21,17 +21,22 @@ public class BGLooper : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider) {
 		Debug.Log ("Triggered: " + collider.name);
 
-		float widthOfBGObject = ((BoxCollider2D)collider).size.x;
+        try
+        {
+            float widthOfBGObject = ((BoxCollider2D)collider).size.x;
 
-		Vector3 pos = collider.transform.position;
+            Vector3 pos = collider.transform.position;
 
-		pos.x += widthOfBGObject * numBGPanels;
+            pos.x += widthOfBGObject * numBGPanels;
 
-		if(collider.tag == "Pipe") {
-			pos.y = Random.Range(pipeMin, pipeMax);
-		}
+            if (collider.tag == "Pipe")
+            {
+                pos.y = Random.Range(pipeMin, pipeMax);
+            }
 
-		collider.transform.position = pos;
+            collider.transform.position = pos;
+        }
+        catch { }
 
 	}
 }
