@@ -7,6 +7,8 @@ public class BirdMovement : MonoBehaviour {
 	public float flapSpeed    = 100f;
 	public float forwardSpeed = 0.11f;
 
+    private int health = 100;
+
 	bool didFlap = false;
 
 	Animator animator;
