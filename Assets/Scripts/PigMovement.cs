@@ -41,6 +41,9 @@ public class PigMovement : MonoBehaviour {
 		else {
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 				didFlap = true;
+				AudioSource[] audios = GetComponents<AudioSource>();
+				var randomAudio = audios[Random.Range(0,4)];
+				randomAudio.Play();
 			}
 		}
 	}
@@ -77,5 +80,28 @@ public class PigMovement : MonoBehaviour {
 
 		dead = false;
 		deathCooldown = 0.5f;
+
+		AudioSource[] audios = GetComponents<AudioSource>();
+		var randomAudio = audios[Random.Range(4,7)];
+		randomAudio.Play();
+		StartCoroutine(DoBlinks(0.2f, 0.25f));
+
 	}
+
+	IEnumerator DoBlinks(float duration, float blinkTime) {
+		while (duration > 0f) {
+			duration -= Time.deltaTime;
+			
+			//toggle renderer
+			GetComponentInChildren<Renderer>().enabled = !GetComponentInChildren<Renderer>().enabled;
+			
+			//wait for a bit
+			yield return new WaitForSeconds(blinkTime);
+		}
+		
+		//make sure renderer is enabled when we exit
+		GetComponentInChildren<Renderer>().enabled = true;
+	}
+
+
 }
