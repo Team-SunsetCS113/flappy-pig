@@ -3,7 +3,7 @@ using System.Collections;
 
 public class StartScreenScript : MonoBehaviour {
 
-	static bool sawOnce = false;
+	public static bool sawOnce = false;
 
 	// Use this for initialization
 	void Start () {

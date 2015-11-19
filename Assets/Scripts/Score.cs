@@ -14,7 +14,15 @@ public class Score : MonoBehaviour {
 		if(instance.bird.dead)
 			return;
 
+		GameObject player_go = GameObject.FindGameObjectWithTag("Player");
+		PigMovement go = player_go.GetComponent<PigMovement> ();
+
+		if(go.flapOnce == false ) {
+			Debug.LogError("Could not find an object with tag 'Player'.");
+		}
+		else{
 		score++;
+			}
 
 		if(score > highScore) {
 			highScore = score;
@@ -26,7 +34,7 @@ public class Score : MonoBehaviour {
 	void Start() {
 		instance = this;
 		GameObject player_go = GameObject.FindGameObjectWithTag("Player");
-		if(player_go == null) {
+		if(player_go == null ) {
 			Debug.LogError("Could not find an object with tag 'Player'.");
 		}
 

@@ -10,6 +10,7 @@ public class PigMovement : MonoBehaviour {
     private int health = 100;
 
 	bool didFlap = false;
+	public bool flapOnce = false;
 
 	Animator animator;
 
@@ -41,6 +42,7 @@ public class PigMovement : MonoBehaviour {
 		else {
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 				didFlap = true;
+				flapOnce = true;
 				AudioSource[] audios = GetComponents<AudioSource>();
 				var randomAudio = audios[Random.Range(0,4)];
 				randomAudio.Play();
