@@ -2,23 +2,18 @@
 using System.Collections;
 
 public class PigMovement : MonoBehaviour {
-
 	Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 100f;
 	public float forwardSpeed = 1f;
-
-    private int health = 100;
-
-	bool didFlap = false;
 	public bool flapOnce = false;
-
-	Animator animator;
-
 	public bool dead = false;
-	float deathCooldown;
-
 	public bool godMode = true;
 
+    private int health = 100;
+	private bool didFlap = false;
+	Animator animator;
+	float deathCooldown;
+	
 	// Use this for initialization
 	void Start () {
 		animator = transform.GetComponentInChildren<Animator>();

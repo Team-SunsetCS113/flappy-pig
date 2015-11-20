@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +10,10 @@ namespace Assets
     {
         private int health = 50;
         private Rigidbody2D ridgidBody2D;
+		private bool dead = false;
+        private Vector3 velocity = Vector3.zero;
 
-        Vector3 velocity = Vector3.zero;
-        public float flapSpeed = 100f;
         public float forwardSpeed = 0.001f;
-
-        private bool dead = false;
-
-
         Animator animator;
 
         // Use this for initialization
@@ -31,7 +27,7 @@ namespace Assets
             //}
         }
 
-
+		//Strong enemies should move to the right, following piggy's motion
         public void Update()
         {
             if (health <= 0)
@@ -41,7 +37,7 @@ namespace Assets
             }
             else
             {
-                ridgidBody2D.AddForce(Vector2.left * forwardSpeed); 
+                ridgidBody2D.AddForce(Vector2.right * forwardSpeed); 
             }
         }
 
