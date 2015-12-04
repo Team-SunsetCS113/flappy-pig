@@ -8,14 +8,11 @@ namespace Assets
     {
         private int health = 10;
         private Rigidbody2D ridgidBody2D;
+		private bool dead = false;
 
         Vector3 velocity = Vector3.zero;
-        public float flapSpeed = 100f;
-        public float forwardSpeed = 1f;
-
-        private bool dead = false;
-        
         Animator animator;
+		public float forwardSpeed = 1f;
 
         // Use this for initialization
         void Start()

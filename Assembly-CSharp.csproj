@@ -45,27 +45,34 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BGLooper.cs" />
-     <Compile Include="Assets\BirdMovement.cs" />
-     <Compile Include="Assets\BottomObstacle.cs" />
-     <Compile Include="Assets\CameraTracksPlayer.cs" />
-     <Compile Include="Assets\EnemyEngine.cs" />
-     <Compile Include="Assets\GroundMover.cs" />
-     <Compile Include="Assets\HealthBar.cs" />
-     <Compile Include="Assets\MainMenu.cs" />
-     <Compile Include="Assets\ModerateEnemy.cs" />
-     <Compile Include="Assets\PigMovement.cs" />
-     <Compile Include="Assets\Score.cs" />
-     <Compile Include="Assets\ScorePoint.cs" />
-     <Compile Include="Assets\StartScreenScript.cs" />
-     <Compile Include="Assets\StrongEnemy.cs" />
-     <Compile Include="Assets\TopObstacle.cs" />
-     <Compile Include="Assets\WeakEnemy.cs" />
+     <Compile Include="Assets\Scripts\BGLooper.cs" />
+     <Compile Include="Assets\Scripts\BottomObstacle.cs" />
+     <Compile Include="Assets\Scripts\CameraTracksPlayer.cs" />
+     <Compile Include="Assets\Scripts\EnemyEngine.cs" />
+     <Compile Include="Assets\Scripts\GroundMover.cs" />
+     <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\ModerateEnemy.cs" />
+     <Compile Include="Assets\Scripts\PigMovement.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
+     <Compile Include="Assets\Scripts\ScorePoint.cs" />
+     <Compile Include="Assets\Scripts\StartScreenScript.cs" />
+     <Compile Include="Assets\Scripts\StrongEnemy.cs" />
+     <Compile Include="Assets\Scripts\TopObstacle.cs" />
+     <Compile Include="Assets\Scripts\WeakEnemy.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

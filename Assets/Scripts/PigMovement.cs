@@ -2,22 +2,18 @@
 using System.Collections;
 
 public class PigMovement : MonoBehaviour {
-
 	Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 100f;
 	public float forwardSpeed = 1f;
-
-    private int health = 100;
-
-	bool didFlap = false;
-
-	Animator animator;
-
+	public bool flapOnce = false;
 	public bool dead = false;
-	float deathCooldown;
-
 	public bool godMode = true;
 
+    private int health = 100;
+	private bool didFlap = false;
+	Animator animator;
+	float deathCooldown;
+	
 	// Use this for initialization
 	void Start () {
 		animator = transform.GetComponentInChildren<Animator>();
@@ -41,6 +37,10 @@ public class PigMovement : MonoBehaviour {
 		else {
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 				didFlap = true;
+				flapOnce = true;
+				AudioSource[] audios = GetComponents<AudioSource>();
+				var randomAudio = audios[Random.Range(0,4)];
+				randomAudio.Play();
 			}
 		}
 	}
@@ -77,5 +77,28 @@ public class PigMovement : MonoBehaviour {
 
 		dead = false;
 		deathCooldown = 0.5f;
+
+		AudioSource[] audios = GetComponents<AudioSource>();
+		var randomAudio = audios[Random.Range(4,7)];
+		randomAudio.Play();
+		StartCoroutine(DoBlinks(0.2f, 0.25f));
+
 	}
+
+	IEnumerator DoBlinks(float duration, float blinkTime) {
+		while (duration > 0f) {
+			duration -= Time.deltaTime;
+			
+			//toggle renderer
+			GetComponentInChildren<Renderer>().enabled = !GetComponentInChildren<Renderer>().enabled;
+			
+			//wait for a bit
+			yield return new WaitForSeconds(blinkTime);
+		}
+		
+		//make sure renderer is enabled when we exit
+		GetComponentInChildren<Renderer>().enabled = true;
+	}
+
+
 }
