@@ -30,6 +30,10 @@ public class PlayerScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             didFlap = true;
+
+			AudioSource[] audios = GetComponents<AudioSource>();
+			var randomAudio = audios[Random.Range(0,4)];
+			randomAudio.Play();
         }
 
         bool shoot = Input.GetButtonDown("Fire1");
@@ -97,7 +101,11 @@ public class PlayerScript : MonoBehaviour {
     {
         bool damagePlayer = false;
 
-        // Collision with enemy
+		AudioSource[] audios = GetComponents<AudioSource>();
+		var randomAudio = audios[Random.Range(4,7)];
+		randomAudio.Play();
+
+		// Collision with enemy
         WeaponizedEnemyScript enemy1 = collision.gameObject.GetComponent<WeaponizedEnemyScript>();
         if (enemy1 != null)
         {

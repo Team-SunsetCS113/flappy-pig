@@ -48,31 +48,48 @@
      <Compile Include="Assets\Scripts\BGLooper.cs" />
      <Compile Include="Assets\Scripts\BottomObstacle.cs" />
      <Compile Include="Assets\Scripts\CameraTracksPlayer.cs" />
+     <Compile Include="Assets\Scripts\DynamicEnemyScript.cs" />
+     <Compile Include="Assets\Scripts\DynamicMovementScript.cs" />
      <Compile Include="Assets\Scripts\EnemyEngine.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealthScript.cs" />
      <Compile Include="Assets\Scripts\GroundMover.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\HealthItemScript.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
      <Compile Include="Assets\Scripts\LoadOnClick.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\ModerateEnemy.cs" />
+     <Compile Include="Assets\Scripts\ObstacleScript.cs" />
      <Compile Include="Assets\Scripts\PigMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealthBarScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealthScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScoreScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerShieldScript.cs" />
+     <Compile Include="Assets\Scripts\PointsItemScript.cs" />
+     <Compile Include="Assets\Scripts\RendererExtensions.cs.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ScorePoint.cs" />
+     <Compile Include="Assets\Scripts\ScrollingScript.cs" />
+     <Compile Include="Assets\Scripts\ShieldItemScript.cs" />
+     <Compile Include="Assets\Scripts\ShotScript.cs" />
+     <Compile Include="Assets\Scripts\SimpleMovementScript.cs" />
+     <Compile Include="Assets\Scripts\SpawnEnemyScript.cs" />
+     <Compile Include="Assets\Scripts\SpawnObstacleScriptV1.cs" />
+     <Compile Include="Assets\Scripts\SpawnObstacleScriptV2.cs" />
+     <Compile Include="Assets\Scripts\SpecialEffectsHelper.cs" />
      <Compile Include="Assets\Scripts\StartScreenScript.cs" />
      <Compile Include="Assets\Scripts\StrongEnemy.cs" />
      <Compile Include="Assets\Scripts\TopObstacle.cs" />
+     <Compile Include="Assets\Scripts\TriggerScript.cs" />
      <Compile Include="Assets\Scripts\WeakEnemy.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\WeaponScript.cs" />
+     <Compile Include="Assets\Scripts\WeaponizedEnemyScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
