@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class PlayerHealthScript : MonoBehaviour {
 
@@ -40,8 +41,15 @@ public class PlayerHealthScript : MonoBehaviour {
             if (gameObject != null) { 
                 // Explosion!
                 SpecialEffectsHelper.Instance.Explosion(transform.position);
-               // SoundEffectsHelper.Instance.MakeExplosionSound();
-            
+                // SoundEffectsHelper.Instance.MakeExplosionSound();
+
+                Time.timeScale = 0;
+                //var instance = Instantiate(Resources.Load("GameOver"));
+                GameObject o = GameObject.FindGameObjectWithTag("GameOver");
+                
+                o.GetComponent<SpriteRenderer>().enabled = true;
+                //Instantiate(o);
+
                 // Dead!
                 Destroy(gameObject);
                 Destroy(GameObject.Find("playerHealthUI"));
