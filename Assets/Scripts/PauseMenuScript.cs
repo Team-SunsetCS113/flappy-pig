@@ -3,13 +3,53 @@ using System.Collections;
 
 public class PauseMenuScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    private bool resume = false;
+
+    void OnGUI()
+    {
+        if(!resume)
+        {
+            const int buttonWidth = 120;
+            const int buttonHeight = 60;
+
+            if (
+              GUI.Button(
+                // Center in X, 1/3 of the height in Y
+                new Rect(
+                  Screen.width / 2 - (buttonWidth / 2),
+                  (1 * Screen.height / 3) - (buttonHeight / 2),
+                  buttonWidth,
+                  buttonHeight
+                ),
+                "Continue"
+              )
+            )
+            {
+                // Reload the level
+                //Application.LoadLevel(1);
+                resume = true;
+
+                GameObject player = GameObject.Find("Player");
+                PlayerScript playerScript = player.GetComponent<PlayerScript>();
+                playerScript.paused = false;
+            }
+
+            if (
+              GUI.Button(
+                // Center in X, 2/3 of the height in Y
+                new Rect(
+                  Screen.width / 2 - (buttonWidth / 2),
+                  (2 * Screen.height / 3) - (buttonHeight / 2),
+                  buttonWidth,
+                  buttonHeight
+                ),
+                "Back to menu"
+              )
+            )
+            {
+                // Reload the level
+                Application.LoadLevel(0);
+            }
+        }
+    }
 }

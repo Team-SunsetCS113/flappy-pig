@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour {
     public int movementPoints = 10;
     public float collisionDamage = 1f;
     private float xPosComplement;
+    public bool paused = false;
 
     Animator animator;
 
@@ -28,51 +29,61 @@ public class PlayerScript : MonoBehaviour {
 	// Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if(!paused)
         {
-            didFlap = true;
-
-			AudioSource[] audios = GetComponents<AudioSource>();
-			var randomAudio = audios[Random.Range(0,4)];
-			randomAudio.Play();
-        }
-
-        bool shoot = Input.GetButtonDown("Fire1");
-        shoot |= Input.GetButtonDown("Fire2");
-
-        if (shoot)
-        {
-            WeaponScript weapon = GetComponent<WeaponScript>();
-            if (weapon != null)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                weapon.Attack(false);
+                Time.timeScale = 0;
+                transform.parent.gameObject.AddComponent<PauseMenuScript>();
+                paused = true;
             }
+
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            {
+                didFlap = true;
+
+                AudioSource[] audios = GetComponents<AudioSource>();
+                var randomAudio = audios[Random.Range(0, 4)];
+                randomAudio.Play();
+            }
+
+            bool shoot = Input.GetButtonDown("Fire1");
+            shoot |= Input.GetButtonDown("Fire2");
+
+            if (shoot)
+            {
+                WeaponScript weapon = GetComponent<WeaponScript>();
+                if (weapon != null)
+                {
+                    weapon.Attack(false);
+                }
+            }
+
+            // Make sure player is not outside the camera bounds
+            var dist = (transform.position - Camera.main.transform.position).z;
+
+            var leftBorder = Camera.main.ViewportToWorldPoint(
+              new Vector3(0, 0, dist)
+            ).x;
+
+            var rightBorder = Camera.main.ViewportToWorldPoint(
+              new Vector3(1, 0, dist)
+            ).x;
+
+            var bottomBorder = Camera.main.ViewportToWorldPoint(
+              new Vector3(0, 0, dist)
+            ).y;
+
+            var topBorder = Camera.main.ViewportToWorldPoint(
+              new Vector3(0, 1, dist)
+            ).y;
+
+            transform.position = new Vector3(
+              Mathf.Clamp(transform.position.x, leftBorder + xPosComplement, rightBorder),
+              Mathf.Clamp(transform.position.y, bottomBorder, topBorder),
+              transform.position.z
+            );
         }
-
-        // Make sure player is not outside the camera bounds
-        var dist = (transform.position - Camera.main.transform.position).z;
-
-        var leftBorder = Camera.main.ViewportToWorldPoint(
-          new Vector3(0, 0, dist)
-        ).x;
-
-        var rightBorder = Camera.main.ViewportToWorldPoint(
-          new Vector3(1, 0, dist)
-        ).x;
-
-        var bottomBorder = Camera.main.ViewportToWorldPoint(
-          new Vector3(0, 0, dist)
-        ).y;
-
-        var topBorder = Camera.main.ViewportToWorldPoint(
-          new Vector3(0, 1, dist)
-        ).y;
-
-        transform.position = new Vector3(
-          Mathf.Clamp(transform.position.x, leftBorder + xPosComplement, rightBorder),
-          Mathf.Clamp(transform.position.y, bottomBorder, topBorder),
-          transform.position.z
-        );
     }
 
     void FixedUpdate() {
