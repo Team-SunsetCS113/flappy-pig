@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
 
 public class PlayerScript : MonoBehaviour {
 
@@ -146,10 +147,18 @@ public class PlayerScript : MonoBehaviour {
         }
     }
 
-   // void OnDestroy()
-   // {
-        //Application.LoadLevel("UnderwaterLevel");    
-   // }
+    void OnDestroy()
+    {
+        Time.timeScale = 0;
+        //GameObject gameOverBtn = GameObject.FindGameObjectWithTag("GameOver");
+        //GameObject playAgainBtn = GameObject.FindGameObjectWithTag("PlayAgainBtn");
+        //gameOverBtn.GetComponent<SpriteRenderer>().enabled = true;
+        //playAgainBtn.GetComponent<SpriteRenderer>().enabled = true;
+        // Game Over.
+        // Add the script to the parent because the current game
+        // object is likely going to be destroyed immediately.
+        transform.parent.gameObject.AddComponent<GameOverScript>();
+    }
 
     void addPoints()
     {

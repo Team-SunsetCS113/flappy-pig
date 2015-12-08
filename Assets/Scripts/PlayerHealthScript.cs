@@ -42,14 +42,7 @@ public class PlayerHealthScript : MonoBehaviour {
                 // Explosion!
                 SpecialEffectsHelper.Instance.Explosion(transform.position);
                 // SoundEffectsHelper.Instance.MakeExplosionSound();
-
-                Time.timeScale = 0;
-                //var instance = Instantiate(Resources.Load("GameOver"));
-                GameObject o = GameObject.FindGameObjectWithTag("GameOver");
                 
-                o.GetComponent<SpriteRenderer>().enabled = true;
-                //Instantiate(o);
-
                 // Dead!
                 Destroy(gameObject);
                 Destroy(GameObject.Find("playerHealthUI"));
