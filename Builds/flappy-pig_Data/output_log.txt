@@ -1,0 +1,298 @@
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3788]
+    Renderer: Intel(R) HD Graphics 4000
+    Vendor:   Intel
+    VRAM:     880 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 NULL=1 RESZ=1 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.051 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 183bc -> priority: 1 
+  Thread -> id: 1299c -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.174975 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 232.
+Total: 0.310461 ms (FindLiveObjects: 0.018815 ms CreateObjectMapping: 0.014111 ms MarkObjects: 0.264276 ms  DeleteObjects: 0.011973 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.953620 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 454.
+Total: 0.301908 ms (FindLiveObjects: 0.024375 ms CreateObjectMapping: 0.026940 ms MarkObjects: 0.239901 ms  DeleteObjects: 0.010263 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can't add component to object that is being destroyed.
+ 
+(Filename:  Line: 87)
+
+UnloadTime: 1.659213 ms
+
+Unloading 176 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.521283 ms (FindLiveObjects: 0.023092 ms CreateObjectMapping: 0.018815 ms MarkObjects: 0.275822 ms  DeleteObjects: 0.203125 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.417369 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.425921 ms (FindLiveObjects: 0.030361 ms CreateObjectMapping: 0.031644 ms MarkObjects: 0.353652 ms  DeleteObjects: 0.009407 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.528981 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 445.
+Total: 0.324572 ms (FindLiveObjects: 0.023092 ms CreateObjectMapping: 0.022236 ms MarkObjects: 0.268980 ms  DeleteObjects: 0.009835 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can't add component to object that is being destroyed.
+ 
+(Filename:  Line: 87)
+
+UnloadTime: 1.380397 ms
+
+Unloading 133 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.487500 ms (FindLiveObjects: 0.019671 ms CreateObjectMapping: 0.019671 ms MarkObjects: 0.293783 ms  DeleteObjects: 0.153520 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.451579 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.333553 ms (FindLiveObjects: 0.015822 ms CreateObjectMapping: 0.015394 ms MarkObjects: 0.290362 ms  DeleteObjects: 0.010690 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.674803 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 498.
+Total: 0.327138 ms (FindLiveObjects: 0.019243 ms CreateObjectMapping: 0.019243 ms MarkObjects: 0.278388 ms  DeleteObjects: 0.009835 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can't add component to object that is being destroyed.
+ 
+(Filename:  Line: 87)
+
+UnloadTime: 1.301713 ms
+
+Unloading 187 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.651284 ms (FindLiveObjects: 0.020098 ms CreateObjectMapping: 0.027368 ms MarkObjects: 0.360921 ms  DeleteObjects: 0.242467 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.480231 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.341678 ms (FindLiveObjects: 0.020526 ms CreateObjectMapping: 0.013684 ms MarkObjects: 0.296349 ms  DeleteObjects: 0.010690 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.536678 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 498.
+Total: 0.347237 ms (FindLiveObjects: 0.021381 ms CreateObjectMapping: 0.027368 ms MarkObjects: 0.287796 ms  DeleteObjects: 0.010263 ms)
+
+HandleD3DDeviceLost
+  HandleD3DDeviceLost: needs reset, doing it
+FullResetD3DDevice
+ResetD3DDevice
+dev->Reset
+D3Dwindow device not lost anymore
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3788]
+    Renderer: Intel(R) HD Graphics 4000
+    Vendor:   Intel
+    VRAM:     880 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 NULL=1 RESZ=1 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.075 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\PETER NGUYEN\Documents\GitHub\cs113\weaponized-flappy-bird2\flappy-pig\Builds\flappy-pig_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 16ce8 -> priority: 1 
+  Thread -> id: 16a44 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.718532 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 232.
+Total: 0.321151 ms (FindLiveObjects: 0.020098 ms CreateObjectMapping: 0.017532 ms MarkObjects: 0.268553 ms  DeleteObjects: 0.014111 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.279476 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 466.
+Total: 0.356217 ms (FindLiveObjects: 0.022236 ms CreateObjectMapping: 0.026940 ms MarkObjects: 0.291645 ms  DeleteObjects: 0.014967 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.749639 ms
+
+Unloading 187 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.632040 ms (FindLiveObjects: 0.028223 ms CreateObjectMapping: 0.026085 ms MarkObjects: 0.313454 ms  DeleteObjects: 0.263421 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.480231 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.419935 ms (FindLiveObjects: 0.024802 ms CreateObjectMapping: 0.018388 ms MarkObjects: 0.360921 ms  DeleteObjects: 0.014967 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.937797 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 486.
+Total: 0.439606 ms (FindLiveObjects: 0.023519 ms CreateObjectMapping: 0.024802 ms MarkObjects: 0.376316 ms  DeleteObjects: 0.014539 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.680790 ms
+
+Unloading 176 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.813356 ms (FindLiveObjects: 0.038486 ms CreateObjectMapping: 0.039342 ms MarkObjects: 0.411810 ms  DeleteObjects: 0.321151 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.591415 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.419935 ms (FindLiveObjects: 0.025230 ms CreateObjectMapping: 0.019671 ms MarkObjects: 0.359211 ms  DeleteObjects: 0.015394 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.812501 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 445.
+Total: 0.412665 ms (FindLiveObjects: 0.024375 ms CreateObjectMapping: 0.026940 ms MarkObjects: 0.345954 ms  DeleteObjects: 0.014539 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.050692 ms
+
+Unloading 133 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.687632 ms (FindLiveObjects: 0.026940 ms CreateObjectMapping: 0.029934 ms MarkObjects: 0.391283 ms  DeleteObjects: 0.239046 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.558060 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.555066 ms (FindLiveObjects: 0.056875 ms CreateObjectMapping: 0.040625 ms MarkObjects: 0.440889 ms  DeleteObjects: 0.014967 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.643159 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 498.
+Total: 0.434474 ms (FindLiveObjects: 0.023519 ms CreateObjectMapping: 0.028651 ms MarkObjects: 0.367336 ms  DeleteObjects: 0.014539 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.063094 ms
+
+Unloading 187 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.730823 ms (FindLiveObjects: 0.038059 ms CreateObjectMapping: 0.024802 ms MarkObjects: 0.383158 ms  DeleteObjects: 0.282237 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.624770 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.493915 ms (FindLiveObjects: 0.024375 ms CreateObjectMapping: 0.021381 ms MarkObjects: 0.431908 ms  DeleteObjects: 0.015394 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.754771 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 486.
+Total: 0.455428 ms (FindLiveObjects: 0.022664 ms CreateObjectMapping: 0.028223 ms MarkObjects: 0.385724 ms  DeleteObjects: 0.018815 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can't add component to object that is being destroyed.
+ 
+(Filename:  Line: 87)
+
+UnloadTime: 1.551450 ms
+
+Unloading 176 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.683784 ms (FindLiveObjects: 0.032072 ms CreateObjectMapping: 0.028223 ms MarkObjects: 0.354934 ms  DeleteObjects: 0.268125 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.541810 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.433619 ms (FindLiveObjects: 0.025230 ms CreateObjectMapping: 0.018388 ms MarkObjects: 0.374605 ms  DeleteObjects: 0.014967 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.744935 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 445.
+Total: 0.424638 ms (FindLiveObjects: 0.021381 ms CreateObjectMapping: 0.024802 ms MarkObjects: 0.363487 ms  DeleteObjects: 0.014539 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can't add component to object that is being destroyed.
+ 
+(Filename:  Line: 87)
+
+UnloadTime: 1.793490 ms
+
+Unloading 133 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.617073 ms (FindLiveObjects: 0.028223 ms CreateObjectMapping: 0.023092 ms MarkObjects: 0.352369 ms  DeleteObjects: 0.212960 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.550362 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.444310 ms (FindLiveObjects: 0.023092 ms CreateObjectMapping: 0.021381 ms MarkObjects: 0.384441 ms  DeleteObjects: 0.014539 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.707304 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 498.
+Total: 0.501185 ms (FindLiveObjects: 0.029934 ms CreateObjectMapping: 0.029934 ms MarkObjects: 0.423783 ms  DeleteObjects: 0.016677 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can't add component to object that is being destroyed.
+ 
+(Filename:  Line: 87)
+
+UnloadTime: 2.186484 ms
+
+Unloading 187 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.836021 ms (FindLiveObjects: 0.037631 ms CreateObjectMapping: 0.027368 ms MarkObjects: 0.425494 ms  DeleteObjects: 0.344671 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.543520 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.493915 ms (FindLiveObjects: 0.029934 ms CreateObjectMapping: 0.021381 ms MarkObjects: 0.424638 ms  DeleteObjects: 0.017532 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.696185 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 486.
+Total: 0.440889 ms (FindLiveObjects: 0.021381 ms CreateObjectMapping: 0.024375 ms MarkObjects: 0.380592 ms  DeleteObjects: 0.013684 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Can't add component to object that is being destroyed.
+ 
+(Filename:  Line: 87)
+
+UnloadTime: 1.562568 ms
+
+Unloading 176 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.681218 ms (FindLiveObjects: 0.028651 ms CreateObjectMapping: 0.023519 ms MarkObjects: 0.360494 ms  DeleteObjects: 0.268125 ms)
+
